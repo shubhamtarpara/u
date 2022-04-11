@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIME</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <div class="title">
+            <div class="main-title">TIME</div>
+            <div class="sub-title">
+                <a href="unix-clock.html">
+                    <div class="sub">Unix clock </div>
+                </a>
+                <a href="Converter.html">
+                    <div class="sub1">Converter</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Date and formate -->
+    <div class="date-time">
+        <div class="date">
+            <button class="month-first" id="month-first">MM/DD/YYYY</button>
+            <button class="day-first" id="day-first">DD/MM/YY</button>
+
+
+        </div>
+        <div class="hour">
+            <button class="full-hour" id = "full-hour" data-format="24">24 Hr</button>
+            <button class="half-hour" id = "half-hour" data-format="12 PM">12 Hr</button>
+        </div>
+    </div>
+
+    <!-- main-clock -->
+    <div class="main-clock">
+        <div class="main-country">India</div>
+        <div class="time" data-format="12">00 : 00 : 00  </div>
+        <div class="day">
+            <h2 id="day-date" >Friday, September12,2021</h2>
+        </div>
+    </div>
+
+    <!-- countries with timezone -->
+    <div class="main-contain">
+        <div class="country">New Zealand
+            <h5>-06:30</h5>
+        </div>
+        <div class="country">Italy
+            <h5>+03:30</h5>
+        </div>
+        <div class="country">China
+            <h5>-02:30</h5>
+        </div>
+        <div class="country">GTM
+            <h5>+05:30</h5>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
